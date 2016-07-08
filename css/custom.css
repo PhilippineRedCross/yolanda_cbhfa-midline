@@ -35,9 +35,9 @@ body{ padding-top:85px}
 .box-chart svg{ height:auto;  padding:30px}
 .box-chart-no-float svg{ height:auto;  padding:30px}
 .percText-other1{ color:#222;  font-weight:900}
-.percText-1{ color:#4393c3;  font-weight:900}
-.percText-2{ color:#f4a582;  font-weight:900}
-.percText-3{ color:#fddbc7;  font-weight:900}
+.percText-1{ color:#7fc97f;  font-weight:900}
+.percText-2{ color:#fdc086;  font-weight:900}
+.percText-3{ color:#ffff99;  font-weight:900}
 .box-chart{ width:180px;  height:180px;  text-align:center;  float:right}
 .box-chart-no-float{ width:180px;  height:180px;  text-align:center}
 .text-tagalog{ color:#999}
