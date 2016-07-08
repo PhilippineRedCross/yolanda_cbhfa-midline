@@ -2,9 +2,9 @@ var surveyData = [];
 var filteredData = [];
 var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M"];
 
-// var pieColors = ["#7fc97f","#fdc086","#ffff99"];
+var pieColors = ["#7fc97f","#fdc086","#ffff99"];
 // var pieColors = ["#66c2a5", "#fdae61", "#ffffbf"];
-var pieColors = ["#4393c3","#f4a582","#fddbc7"];
+//var pieColors = ["#4393c3","#f4a582","#fddbc7"];
 
 var activeProvince = "ALL";
 var activeMunicipality = "ALL";
