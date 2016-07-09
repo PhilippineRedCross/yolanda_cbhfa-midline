@@ -2,9 +2,59 @@ var surveyData = [];
 var filteredData = [];
 var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M"];
 
-var pieColors = ["#7fc97f","#fdc086","#ffff99"];
+// var pieColors = ["#7fc97f","#fdc086","#ffff99"];
 // var pieColors = ["#66c2a5", "#fdae61", "#ffffbf"];
-//var pieColors = ["#4393c3","#f4a582","#fddbc7"];
+// var pieColors = ["#4393c3","#f4a582","#fddbc7"];
+// var pieColors = ["#24ED8F","#24E6ED","#EE2A24"];
+var pieColors = ["#5CB85C","#337AB7","#F0AD4E"];
+/* 
+blue
+#337AB7
+
+green
+#5CB85C
+
+
+
+orange
+#F0AD4E
+
+
+red
+#D9534F
+
+
+
+ */
+
+/* FDC086
+86C3FC
+FCFA86 
+FC8688 
+
+
+
+Hex: #EE2A24
+
+Complementary #:
+
+24E6ED
+
+Analogous #:
+
+ED8F24 ED2482
+
+
+
+
+4393C3
+C27142
+
+42C2B1
+
+4253C2
+ */
+
 
 var activeProvince = "ALL";
 var activeMunicipality = "ALL";
