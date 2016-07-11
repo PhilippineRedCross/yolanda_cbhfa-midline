@@ -222,34 +222,34 @@ function BC1() {
           '<td><span id="maleTotal"></span></td>' +
         '</tr>' +              
         '<tr>' +
-          '<td><img class="tableIcon pull-right" src="img/infant.svg"> Infant, 0-11 months' +
+          '<td><img class="tableIcon pull-right" src="img/infant.svg"> <br>Infant, 0-11 months' +
             '<span class="text-tagalog"> [Sanggol 0-11 buwaan]</span></td>' +
-          '<td><span id="femaleInfant"></span></td>' +
-          '<td><span id="maleInfant"></span></td>' +
+          '<td><br><span id="femaleInfant"></span></td>' +
+          '<td><br><span id="maleInfant"></span></td>' +
         '</tr>' +
         '<tr>' +
-          '<td><img class="tableIcon pull-right" src="img/children.svg"> Young child, 1-4 years' +
+          '<td><img class="tableIcon pull-right" src="img/children.svg"> <br>Young child, 1-4 years' +
             '<span class="text-tagalog"> [Anak 1-4 taon]</span></td>' +
-          '<td><span id="femaleYoung"></span></td>' +
-          '<td><span id="maleYoung"></span></td>' +
+          '<td><br><span id="femaleYoung"></span></td>' +
+          '<td><br><span id="maleYoung"></span></td>' +
         '</tr>' +
         '<tr>' +
-          '<td><img class="tableIcon pull-right" src="img/children.svg"> Child, 5-14 years' +
+          '<td><img class="tableIcon pull-right" src="img/children.svg"> <br>Child, 5-14 years' +
             '<span class="text-tagalog"> [Anak 5-14 taon]</span></td>' +
-          '<td><span id="femaleChild"></span></td>' +
-          '<td><span id="maleChild"></span></td>' +
+          '<td><br><span id="femaleChild"></span></td>' +
+          '<td><br><span id="maleChild"></span></td>' +
         '</tr>' +
         '<tr>' +
-          '<td><img class="tableIcon pull-right" src="img/adult.svg"> Adult, 15-49 years' +
+          '<td><img class="tableIcon pull-right" src="img/adult.svg"> <br>Adult, 15-49 years' +
             '<span class="text-tagalog"> [Edad 15-49 taon]</span></td>' +
-          '<td><span id="femaleAdult"></span></td>' +
-          '<td><span id="maleAdult"></span></td>' +
+          '<td><br><span id="femaleAdult"></span></td>' +
+          '<td><br><span id="maleAdult"></span></td>' +
         '</tr>' +
         '<tr>' +
-          '<td><img class="tableIcon pull-right" src="img/elderly.svg"> Adult, 50+' +
+          '<td><img class="tableIcon pull-right" src="img/elderly.svg"> <br>Adult, 50+' +
             '<span class="text-tagalog"> [Edad 50 taon pataas]</span></td>' +
-          '<td><span id="femaleSenior"></span></td>' +
-          '<td><span id="maleSenior"></span></td>' +
+          '<td> <br><span id="femaleSenior"></span></td>' +
+          '<td><br><span id="maleSenior"></span></td>' +
         '</tr>' +
       '</tbody></table>';
   $(infoSelector).append(thisInfoHtml);
