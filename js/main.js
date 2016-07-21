@@ -2713,7 +2713,6 @@ function DI2(){
   DI3();
 }
 
-
 function DI3(){
   var questionID = "DI3";
   var questionEnglish = "If your baby was to suffer, would/did you breastfeed him/her less than usual, about the same amount or more than usual?";
@@ -2746,8 +2745,7 @@ function DI4(){
     "less":"less",
     "same":"same",
     "more":"more",
-    "nothing":"",
-	"not":"",
+    "nothing":"nothing to drink",
     "dk":"don't know",
     "skip":"no response"
   };
@@ -2755,11 +2753,12 @@ function DI4(){
     "less":"bihira",
     "same":"gayag ng dato o walang pagbabago",
     "more":"mas madalas",
-    "nothing":"",
-	"not":"",
+    "nothing":"walang iniinom",  
     "dk":"hindi alam",
     "skip":"walang sagot"
   };
+  
+  	// "not":"walang iniinom",
   analysisSelectOneWhatAnswer(questionID, questionEnglish, questionTagalog, answersEnglish, answersTagalog);
   DI5();
 }
@@ -2772,8 +2771,7 @@ function DI5(){
     "less":"less",
     "same":"same",
     "more":"more",
-    "nothing":"",
-	"not":"",
+    "nothing":"nothing to eat",
     "dk":"don't know",
     "skip":"no response"
   };
@@ -2781,8 +2779,7 @@ function DI5(){
     "less":"bihira",
     "same":"gayag ng dato o walang pagbabago",
     "more":"mas madalas",
-    "nothing":"",
-	"not":"",
+    "nothing":"walang kinakain",
     "dk":"hindi alam",
     "skip":"walang sagot"
   };
