@@ -2746,7 +2746,8 @@ function DI4(){
     "less":"less",
     "same":"same",
     "more":"more",
-    "not":"",
+    "nothing":"",
+	"not":"",
     "dk":"don't know",
     "skip":"no response"
   };
@@ -2754,7 +2755,8 @@ function DI4(){
     "less":"bihira",
     "same":"gayag ng dato o walang pagbabago",
     "more":"mas madalas",
-    "not":"walang iniinom",
+    "nothing":"",
+	"not":"",
     "dk":"hindi alam",
     "skip":"walang sagot"
   };
@@ -2770,7 +2772,8 @@ function DI5(){
     "less":"less",
     "same":"same",
     "more":"more",
-    "not":"",
+    "nothing":"",
+	"not":"",
     "dk":"don't know",
     "skip":"no response"
   };
@@ -2778,7 +2781,8 @@ function DI5(){
     "less":"bihira",
     "same":"gayag ng dato o walang pagbabago",
     "more":"mas madalas",
-    "not":"walang kinakain",
+    "nothing":"",
+	"not":"",
     "dk":"hindi alam",
     "skip":"walang sagot"
   };
