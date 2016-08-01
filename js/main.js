@@ -2113,7 +2113,7 @@ function IM4(){
 function sanitation(){
   var section = false;
   $.each(filteredData, function(index, survey){
-    if(survey["cbhfa-IM_section"] == "continue"){
+    if(survey["cbhfa-IM_section"] = "continue"){
       section = true;
     }
   });
