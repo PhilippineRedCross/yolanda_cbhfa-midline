@@ -380,12 +380,23 @@ function BC3(){
   var questionEnglish = "How old are you?";
   var questionTagalog = "Ilang taon ka na? Ano ang edad mo?";
   var yearResponses = [];
+  var notAskedCount = 0;
   $.each(filteredData, function(surveyIndex, survey){
     var thisAnswer = survey[questionID];
-    if(isFinite(parseInt(thisAnswer, 10)) == true){
-      yearResponses.push(parseInt(thisAnswer, 10));
+    if ((thisAnswer == '') || (thisAnswer == "0") || (thisAnswer == "999")){
+      notAskedCount ++;
+    } else {
+      if(isFinite(parseInt(thisAnswer, 10)) == true){
+        yearResponses.push(parseInt(thisAnswer, 10));
+      }
     }
   });
+  // $.each(filteredData, function(surveyIndex, survey){
+    // var thisAnswer = survey[questionID];
+    // if(isFinite(parseInt(thisAnswer, 10)) == true){
+      // yearResponses.push(parseInt(thisAnswer, 10));
+    // }
+  // });
   var maxYears = Math.max.apply(Math,yearResponses);
   var minYears = Math.min.apply(Math,yearResponses);
   var sum = 0;
@@ -2307,7 +2318,7 @@ function WS6number(){
   var notAskedCount = 0;
   $.each(filteredData, function(surveyIndex, survey){
     var thisAnswer = survey[questionID];
-    if ((thisAnswer == "n/a") || (thisAnswer == "999")){
+    if ((thisAnswer === '') || (thisAnswer === "999")){
       notAskedCount ++;
     } else {
       if(isFinite(parseInt(thisAnswer, 10)) == true){
