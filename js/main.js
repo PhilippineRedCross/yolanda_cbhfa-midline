@@ -848,7 +848,7 @@ function SM2(){
   $.each(filteredData, function(surveyIndex, survey){
     // topic skipped?
     // if(survey[skip] === "n/a"){
-		if ((survey[skip] === "n/a") || (survey[skip] === '')){
+	if ((survey[skip] === "n/a") || (survey[skip] === '')){
       notAskedCount ++;
     } else {
       askedCount ++;
@@ -931,9 +931,10 @@ function SM3(){
   }
   $.each(filteredData, function(surveyIndex, survey){
     // if (survey[dk] === "n/a"){
-		if ((survey[dk] === "n/a") || (survey[dk] === '')){
+	if ((survey[dk] === "n/a") || (survey[dk] === '')){
       topicSkipped ++;
-    } else {
+	  
+	} else {
       totalCount ++;
       // counts for each of the responses
       for (response in allResponses){
@@ -1001,7 +1002,7 @@ function SM4(){
       dkCount ++;
     } else if (thisAnswer == "777") {
       noResponseCount ++;
-    } else if ((thisAnswer == "n/a")||(thisAnswer.length <0)||(thisAnswer == "FALSE")){
+    } else if ((thisAnswer === "n/a") || (thisAnswer === '')){
       notAskedCount ++;
     } else {
       if(isFinite(parseInt(thisAnswer, 10)) == true){
