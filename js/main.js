@@ -440,7 +440,7 @@ function FA2() {
   var totalAttended = 0;
   $.each(filteredData, function(surveyIndex, survey){
     // if (survey[questionID] === "n/a"){
-		if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
+	if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       noTraining ++;
     } else {
       totalAttended ++;
@@ -551,7 +551,7 @@ function FA5(){
   var totalAttended = 0;
   $.each(filteredData, function(surveyIndex, survey){
     // if (survey[questionID] === "n/a"){
-		if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
+	if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       notAsked ++;
     } else { 
       totalAttended ++;
@@ -643,7 +643,7 @@ function FA6(){
   var totalAttended = 0;
   $.each(filteredData, function(surveyIndex, survey){
     // if (survey[questionID] === "n/a"){
-		if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
+	if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       notAsked ++;
     } else {
       totalAttended ++;
@@ -848,8 +848,7 @@ function SM2(){
   $.each(filteredData, function(surveyIndex, survey){
     // topic skipped?
     // if(survey[skip] === "n/a"){
-	// if ((survey[skip] === "n/a") || (survey[skip] === '')){
-		if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
+	if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       notAskedCount ++;
     } else {
       askedCount ++;
@@ -1801,7 +1800,7 @@ function IM1(){
   var totalCount = 0;
   $.each(filteredData, function(surveyIndex, survey){
     // if (survey[questionID] === "n/a"){
-		if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
+	if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       topicSkipped ++;
     } else {
       totalCount ++;
@@ -2630,7 +2629,7 @@ function DI2(){
     };    
     // counts for analysis chart
     // if (survey[nothing] === "n/a"){
-		if ((survey[nothing] === "n/a") || (survey[nothing] === '')){
+	if ((survey[nothing] === "n/a") || (survey[nothing] === '')){
       notAskedCount ++;
     } else if (survey[nothing] === "TRUE"){
       nothingCount ++;
@@ -4516,7 +4515,7 @@ function analysisYesNoDontEat(questionID, questionEnglish, questionTagalog){
       skipped ++;
     }
     // if (survey[questionID] === "n/a"){
-		if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
+	if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       topicSkipped ++;
     }
   });
@@ -4674,7 +4673,7 @@ function observeMultipleWhatAnswers(questionID, questionEnglish, questionTagalog
   }
   $.each(filteredData, function(surveyIndex, survey){
     // if (survey[skip] === "n/a"){
-		if ((survey[skip] === "n/a") || (survey[skip] === '')){
+	if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       topicSkipped ++;
     } else {
       totalCount ++;
@@ -4844,7 +4843,7 @@ function analysisMoreThreeLessThree(questionID, questionEnglish, questionTagalog
     };    
     // counts for analysis chart
     // if (survey[dk] === "n/a"){
-		if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
+	if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       notAskedCount ++;
     } else if (survey[dk] === "TRUE"){
       dontKnow ++;
@@ -4943,7 +4942,7 @@ function analysisAssessYesNo(questionID, questionEnglish, questionTagalog){
   var totalCount = 0;
   $.each(filteredData, function(surveyIndex, survey){
     // if (survey[questionID] === "n/a"){
-		if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
+	if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       notAskedCount ++;
     } else {
       totalCount++;
@@ -5020,7 +5019,7 @@ function analysisAgreeDisagree(questionID, questionEnglish, questionTagalog){
   var notAskedCount = 0;
   $.each(filteredData, function(surveyIndex, survey){
     // if (survey[questionID] === "n/a"){
-		if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
+	if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       notAskedCount ++;
     } else {
       totalCount ++;
@@ -5080,7 +5079,7 @@ function vaccineCard(questionID, questionEnglish, questionTagalog){
   var totalCount = 0;
   $.each(filteredData, function(surveyIndex, survey){
     // if (survey[questionID] === "n/a"){
-		if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
+	if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       notAskedCount ++;
     } else {
       totalCount++;
@@ -5155,7 +5154,7 @@ function observationStartOptions(questionID, questionEnglish, questionTagalog){
   var totalCount = 0;
   $.each(filteredData, function(surveyIndex, survey){
     // if (survey[questionID] === "n/a"){
-		if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
+	if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       topicSkipped ++;
     } else {
       totalCount ++;
@@ -5236,7 +5235,7 @@ function orsPrep(questionID, questionEnglish, questionTagalog){
       skipped ++;
     }
     // if (survey[questionID] === "n/a"){
-		if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
+	if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       topicSkipped ++;
     }
   });
