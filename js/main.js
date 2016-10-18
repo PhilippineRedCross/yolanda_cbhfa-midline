@@ -4421,7 +4421,7 @@ function analysisYesNoDk(questionID, questionEnglish, questionTagalog){
     if (survey[questionID] === "skip"){
       skipped ++;
     }
-    if (survey[questionID] === "n/a"){
+    if ((survey[questionID] === "n/a") || (survey[questionID] === "FALSE") || (survey[questionID] === '')){
       topicSkipped ++;
     }
   });
@@ -4505,7 +4505,7 @@ function analysisYesNoDontEat(questionID, questionEnglish, questionTagalog){
     if (survey[questionID] === "skip"){
       skipped ++;
     }
-    if (survey[questionID] === "n/a"){
+    if ((survey[questionID] === "n/a") || (survey[questionID] === "FALSE") || (survey[questionID] === '')){
       topicSkipped ++;
     }
   });
@@ -4618,7 +4618,8 @@ function analysisSelectMultipleWhatAnswers(questionID, questionEnglish, question
     allResponses[responseOption] = 0;
   }
   $.each(filteredData, function(surveyIndex, survey){
-    if (survey[skip] === "n/a"){
+    // if (survey[skip] === "n/a"){
+		if ((survey[skip] === "n/a") || (survey[skip] === "FALSE") || (survey[skip] === '')){
       topicSkipped ++;
     } else {
       totalCount ++;
