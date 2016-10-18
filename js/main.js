@@ -4631,7 +4631,7 @@ function analysisSelectMultipleWhatAnswers(questionID, questionEnglish, question
   }
   $.each(filteredData, function(surveyIndex, survey){
     // if (survey[skip] === "n/a"){
-	if ((survey[skip] === "n/a") || (survey[skip] === '')){
+	if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       topicSkipped ++;
     } else {
       totalCount ++;
@@ -4844,7 +4844,7 @@ function analysisMoreThreeLessThree(questionID, questionEnglish, questionTagalog
     };    
     // counts for analysis chart
     // if (survey[dk] === "n/a"){
-		if ((survey[dk] === "n/a") || (survey[dk] === '')){
+		if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       notAskedCount ++;
     } else if (survey[dk] === "TRUE"){
       dontKnow ++;
