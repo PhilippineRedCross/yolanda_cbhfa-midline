@@ -848,7 +848,8 @@ function SM2(){
   $.each(filteredData, function(surveyIndex, survey){
     // topic skipped?
     // if(survey[skip] === "n/a"){
-	if ((survey[skip] === "n/a") || (survey[skip] === '')){
+	// if ((survey[skip] === "n/a") || (survey[skip] === '')){
+		if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       notAskedCount ++;
     } else {
       askedCount ++;
@@ -931,7 +932,7 @@ function SM3(){
   }
   $.each(filteredData, function(surveyIndex, survey){
     // if (survey[dk] === "n/a"){
-	if ((survey[dk] === "n/a") || (survey[dk] === '')){
+	if ((survey[questionID] === "n/a") || (survey[questionID] === '')){
       topicSkipped ++;
 	  
 	} else {
