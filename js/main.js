@@ -996,7 +996,7 @@ function SM4(){
       dkCount ++;
     } else if (thisAnswer == "777") {
       noResponseCount ++;
-    } else if (thisAnswer == "n/a"){
+    } else if ((thisAnswer == "n/a")||(thisAnswer.length <0)||(thisAnswer == "FALSE")){
       notAskedCount ++;
     } else {
       if(isFinite(parseInt(thisAnswer, 10)) == true){
@@ -4330,7 +4330,7 @@ function analysisYesNo(questionID, questionEnglish, questionTagalog){
   var topicSkipped = 0;
   var totalCount = 0;
   $.each(filteredData, function(surveyIndex, survey){
-    if (survey[questionID] === "n/a"){
+    if ((survey[questionID] === "n/a") || (survey[questionID] === "FALSE") || (survey[questionID] === '')){
       topicSkipped ++;
     } else {
       totalCount ++;
